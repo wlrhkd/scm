@@ -1,0 +1,135 @@
+$(document).ready(function(){
+    $("#btn_search_vndmst_p").on("click",function(){
+        pgLoadVndmstData(1);
+    });
+    //업체리스트 가져오기
+    function pgLoadVndmstData(pageno){
+        //const vSearchVal = $("#txt_search_vndmst_p").val();
+        const vSearchVal = cfGetValue("txt_search_vndmst_p");
+        
+        //const vCheckGubun = $(":input:radio[name=gubun_vndmst]:checked").val();//업체명 조회
+        const vCheckGubun = cfGetValue("rbt_gubun_vndmst_p1");
+        
+        //console.log(vCheckGubun);
+        const oData = {
+            "SearchGubun" : "vndmst",
+            "Page" : pageno,
+            "CheckGubun" : vCheckGubun,
+            "SearchValue" : vSearchVal
+        }
+        $.ajax({
+            type: "GET",
+            url: "../comm_vndmst_f",
+            data: {SearchGubun: "vndmst", Page: pageno, CheckGubun: vCheckGubun, SearchValue: vSearchVal},
+            //datatype: 'JSON',
+            beforeSend: function () {
+                //$("#tbl_tbody_vndmst_p").empty();
+                //$('.wrap-loading').removeClass('display-none');
+            },
+            complete: function () {
+                //$('.wrap-loading').addClass('display-none');
+            },
+            success: function (response) {
+                //$("#tbl_tbody_vndmst_p").empty();
+                let listHTML = "";
+                let aData = JSON.parse(response);
+                aData = JSON.parse(JSON.stringify(aData).replace(/\:null/gi, "\:\"\"")); //null을 공백으로
+                let nTotalRecords = aData.TOTAL; //전체 레코드 수
+                let nRecordPerPage = aData.PAGEROW; // 페이지 로우 수
+                let nRowId = 1;
+                for (var i = 0; i < aData.DATA.length; i++) {
+                    let aItem = aData.DATA[i];
+                    let vRows = "";
+    
+                    let nPageno = (Number(pageno) - 1) * nRecordPerPage + nRowId;
+                    nRowId++;
+                    vRows = "<tr>";
+                    vRows += "<td id='" + aItem.SEQ + "'>" + nPageno + "</td>";
+                    vRows += "<td class='left' id='" + aItem.CVCOD + "'>" + aItem.CVCOD + "</td>";
+                    vRows += "<td class='left'>" + aItem.CVNAS + "</td>";
+                    vRows += "</tr>";
+                    $("#tbl_tbody_vndmst_p").append(vRows);
+                };
+
+                //페이징
+                if (nTotalRecords > nRecordPerPage) {
+    
+                    let nTotalpage = Math.ceil(nTotalRecords * 1.0 / nRecordPerPage);   //총페이지          
+                    let nBlock = 10;
+                    //let blockNum = Math.ceil(totalpage * 1.0 / block); //페이지번호 10개까지 표시 총블록
+                    let nNowBlock = parseInt((Number(pageno) - 1) / nBlock) + 1;
+
+                    let nSpage = (nNowBlock - 1) * nBlock + 1; //시작페이지
+                    if (nSpage <= 1) {
+                        nSpage = 1;
+                    }
+                    let nEpage = nSpage + nBlock - 1;
+                    if (nTotalpage < nEpage) {
+                        nEpage = nTotalpage;
+                    };
+
+
+                    listHTML = "";
+                    //앞페이지 이동(블럭)
+                    if (nSpage == 1) {
+                        listHTML = "<a href='#' class='prev disabled' title='이전 페이지'><span class='icon-chevron-left'></span></a>";
+                    } else {
+                        let nPrepage = Number(pageno) - 1;
+                        listHTML = "<a href='#' class='page-vndmst-link prev' title='이전 페이지' id='" + nPrepage + "'><span class='icon-chevron-left'></span></a>";
+                    }
+                    listHTML = listHTML + "<span>";
+                    for (i = nSpage; i <= nEpage; i++) {
+                        //console.log("===>"+pageno);
+                        //console.log(i);
+                        if (Number(pageno) == i) {
+                            listHTML = listHTML + "<a href='#' class='page-vndmst-link active' title='" + i + " 페이지'  id='" + i + "'>" + i + "</a>";
+                        } else {
+                            listHTML = listHTML + "<a href='#' class='page-vndmst-link' title='" + i + " 페이지'  id='" + i + "'>" + i + "</a>";
+                        }
+                    }
+                    listHTML = listHTML + "</span>";
+                    //뒤페이지 이동(블럭)
+                    if (nEpage >= nTotalpage) {
+                        listHTML = listHTML + "<a href='#' class='next disabled' title='다음페이지'><span class='icon-chevron-right'></span></a>";
+                    } else {
+                        let nNextpage = Number(pageno) + 1;
+                        listHTML = listHTML + "<a href='#' class='page-vndmst-link next' title='다음페이지' id='" + nNextpage + "'><span class='icon-chevron-right'></span></a>";
+                    }
+                    //console.log(pageno);
+                    //console.log( nextpage);
+                } else {
+                    listHTML = "";
+                }
+                //console.log(listHTML);
+                $("#oPaginate_vndmst_p").html(listHTML);
+
+            },
+            error: function (request, status, error) {
+                alert("code = " + request.status + " message = " + request.responseText + " error = " + error); // 실패 시 처리
+            }
+        });
+    };
+    
+    //업체리스트 page click
+    $(document).on("click",".page-vndmst-link",function(event){
+        //alert("클릭입니다");
+        const nPagenum =  $(this).attr("id");
+        //console.log(pagenum);
+        //$("#msg").html(ytno+","+pagenum+","+blkcnt);
+        pgLoadVndmstData(nPagenum);
+    });
+    
+    //업체리스트 모달 선택값 설정 후 종료
+    $(document).on('dblclick', '#tbl_tbody_vndmst_p tr ', function () { 
+        const aTableData = $(this).children("td").map(function() {
+            return $(this).text();
+        })      
+        //$("#txt_cvcod").val(aTableData[1]);
+        //$("#txt_cvnas").val(aTableData[2]);
+        const vModalID = modalObj.modalID.id;
+        cfClosePopup();
+        pgAfterPopup(vModalID, aTableData);
+        //$('.btn-modal-close').click();
+    });
+});
+

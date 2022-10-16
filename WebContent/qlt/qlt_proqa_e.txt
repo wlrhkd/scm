@@ -1,0 +1,61 @@
+<tr>
+    <th class="wt70">NO</th>
+    <th class="wt150">거래처</th>
+    <th class="wt110">발생구분</th>
+    <th class="wt110">발생일자</th>
+    <th class="wt120">품번</th>
+    <th class="wt180">품명</th>
+    <th class="wt90">발생수량</th>
+    <th class="wt180">발생현상</th>
+    <th class="wt110">개선요구일</th>
+    <th class="wt110">요구서</th>
+    <th class="wt110">대책서</th>
+    <th class="wt110">제출여부</th>
+    <th class="wt110">개선완료일</th>
+    <th class="wt110">사업장</th>
+</tr>|<tr>
+    <td class="center">NO</td>
+    <td class="left">CVCOD</td>
+    <td class="center">IONAM</td>
+    <td class="center">INSDAT</td>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="center">IOFAQTY</td>
+    <td class="center">IOFATXT</td>
+    <td class="center">JOCHYDAT</td>
+    <td class="center">BIN</td>
+    <td class="center">DAE</td>
+    <td class="center">SUBMIT_YN</td>
+    <td class="center">JOCHWDAT</td>
+    <td class="center">SAUPJ</td>
+</td>|<tr>
+    <th class="wt70">NO</th>
+    <th class="wt150">거래처</th>
+    <th class="wt110">발생구분</th>
+    <th class="wt110">발생일자</th>
+    <th class="wt120">품번</th>
+    <th class="wt180">품명</th>
+    <th class="wt90">발생수량</th>
+    <th class="wt180">발생현상</th>
+    <th class="wt110">개선요구일</th>
+    <th class="wt110">요구서</th>
+    <th class="wt110">대책서</th>
+    <th class="wt110">제출여부</th>
+    <th class="wt110">개선완료일</th>
+    <th class="wt110">사업장</th>
+</tr>|<tr>
+    <td class="center">NO</td>
+    <td class="left">CVCOD</td>
+    <td class="center">IONAM</td>
+    <td class="center">INSDAT</td>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="center">IOFAQTY</td>
+    <td class="center">IOFATXT</td>
+    <td class="center">JOCHYDAT</td>
+    <td class="center">BIN</td>
+    <td class="center">DAE</td>
+    <td class="center">SUBMIT_YN</td>
+    <td class="center">JOCHWDAT</td>
+    <td class="center">SAUPJ</td>
+</td>

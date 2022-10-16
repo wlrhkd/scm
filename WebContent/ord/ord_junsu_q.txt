@@ -1,0 +1,57 @@
+<tr>
+    <th class="wt120">발주번호</th>
+    <th class="wt50">항번</th>
+    <th class="wt150">품번</th>
+    <th class="wt200">품명</th>
+    <th class="wt180">규격</th>
+    <th class="wt200">재질</th>
+    <th class="wt80">발주일자</th>
+    <th class="wt80">납기요구일자</th>
+    <th class="wt80">납기일자</th>
+    <th class="wt70">발주량</th>
+    <th class="wt70">납품량</th>
+    <th class="wt70">미납량</th>
+    <th class="wt50">초과일수</th>
+</tr>|<tr>
+    <td class="left">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="center">BARDATE</td>
+    <td class="center">GUDAT</td>
+    <td class="center">NADATE</td>
+    <td class="right">BALQTY</td>
+    <td class="right">RCQTY</td>
+    <td class="right">GABQTY</td>
+    <td class="center">GABDAY</td>
+</td>|<tr>
+    <th class="wt120">발주번호</th>
+    <th class="wt50">항번</th>
+    <th class="wt150">품번</th>
+    <th class="wt200">품명</th>
+    <th class="wt180">규격</th>
+    <th class="wt200">재질</th>
+    <th class="wt80">발주일자</th>
+    <th class="wt80">납기요구일자</th>
+    <th class="wt80">납기일자</th>
+    <th class="wt70">발주량</th>
+    <th class="wt70">납품량</th>
+    <th class="wt70">미납량</th>
+    <th class="wt50">초과일수</th>
+</tr>|<tr>
+    <td class="left">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="center">BARDATE</td>
+    <td class="center">GUDAT</td>
+    <td class="center">NADATE</td>
+    <td class="right">BALQTY</td>
+    <td class="right">RCQTY</td>
+    <td class="right">GABQTY</td>
+    <td class="center">GABDAY</td>
+</td>

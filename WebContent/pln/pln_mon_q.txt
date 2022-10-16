@@ -1,0 +1,57 @@
+<tr>
+    <th class="wt150">품번</th>
+    <th class="wt200">품명</th>
+    <th class="wt180">규격</th>
+    <th class="wt200">재질</th>
+    <th class="wt80">합계</th>
+    <th class="wt80">1주</th>
+    <th class="wt80">2주</th>
+    <th class="wt80">3주</th>
+    <th class="wt80">4주</th>
+    <th class="wt80">5주</th>
+    <th class="wt80">6주</th>
+    <th class="wt80">QTY_M1</th>
+    <th class="wt80">QTY_M2</th>
+</tr>|<tr>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="right">SUM</td>
+    <td class="right">QTY_01</td>
+    <td class="right">QTY_02</td>
+    <td class="right">QTY_03</td>
+    <td class="right">QTY_04</td>
+    <td class="right">QTY_05</td>
+    <td class="right">QTY_06</td>
+    <td class="right">QTY_M1</td>
+    <td class="right">QTY_M2</td>
+</tr>|<tr>
+    <th class="wt150">품번</th>
+    <th class="wt200">품명</th>
+    <th class="wt180">규격</th>
+    <th class="wt200">재질</th>
+    <th class="wt80">합계</th>
+    <th class="wt80">1주</th>
+    <th class="wt80">2주</th>
+    <th class="wt80">3주</th>
+    <th class="wt80">4주</th>
+    <th class="wt80">5주</th>
+    <th class="wt80">6주</th>
+    <th class="wt80">다음달</th>
+    <th class="wt80">다음다음달</th>
+</tr>|<tr>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="right">SUM</td>
+    <td class="right">QTY_01</td>
+    <td class="right">QTY_02</td>
+    <td class="right">QTY_03</td>
+    <td class="right">QTY_04</td>
+    <td class="right">QTY_05</td>
+    <td class="right">QTY_06</td>
+    <td class="right">QTY_M1</td>
+    <td class="right">QTY_M2</td>
+</tr>

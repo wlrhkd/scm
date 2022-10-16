@@ -1,0 +1,83 @@
+<tr>
+    <th class="wt50">NO</th>
+    <th class="wt110">품번</th>
+    <th class="wt230">품명</th>
+    <th class="wt210">규격</th>
+    <th class="wt100">사양</th>
+    <th class="wt80">구매형태</th>
+    <th class="wt80">창고</th>
+    <th class="wt70">현재고</th>
+    <th class="wt70">발주량</th>
+    <th class="wt70">검사대기량</th>
+    <th class="wt70">입고대기량</th>
+    <th class="wt100">최종입고일</th>
+    <th class="wt100">최종출고일</th>
+</tr>|<tr>
+    <td class="center">ROWNUM</td>
+    <td class="center">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">AAA</td>
+    <td class="left">PSPEC</td>
+    <td class="center">ITGU</td>
+    <td class="center">CVNAS</td>
+    <td class="right">JEGO_QTY</td>
+    <td class="right">BALJU_QTY</td>
+    <td class="right">GUMDE</td>
+    <td class="right">DAEGI</td>
+    <td class="center">LAST_IN_DATE</td>
+    <td class="center">LAST_OUT_DATE</td>
+</td>|<tr>
+    <th class="wt110">품번</th>
+    <th class="wt230">품명</th>
+    <th class="wt210">규격</th>
+    <th class="wt100">사양</th>
+    <th class="wt80">구매형태</th>
+    <th class="wt80">창고</th>
+    <th class="wt70">현재고</th>
+    <th class="wt70">발주량</th>
+    <th class="wt70">검사대기량</th>
+    <th class="wt70">입고대기량</th>
+    <th class="wt100">최종입고일</th>
+    <th class="wt100">최종출고일</th>
+</tr>|<tr>
+    <td class="center">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">AAA</td>
+    <td class="left">PSPEC</td>
+    <td class="center">ITGU</td>
+    <td class="center">CVNAS</td>
+    <td class="right">JEGO_QTY</td>
+    <td class="right">BALJU_QTY</td>
+    <td class="right">GUMDE</td>
+    <td class="right">DAEGI</td>
+    <td class="center">LAST_IN_DATE</td>
+    <td class="center">LAST_OUT_DATE</td>
+</tr>|<tr>
+    <th class="wt50">NO</th>
+    <th class="wt110">품번</th>
+    <th class="wt230">품명</th>
+    <th class="wt210">규격</th>
+    <th class="wt100">사양</th>
+    <th class="wt80">구매형태</th>
+    <th class="wt80">창고</th>
+    <th class="wt70">현재고</th>
+    <th class="wt70">발주량</th>
+    <th class="wt70">검사대기량</th>
+    <th class="wt70">입고대기량</th>
+    <th class="wt100">최종입고일</th>
+    <th class="wt100">최종출고일</th>
+</tr>|<tr>
+    <td class="center">ROWNUM</td>
+    <td class="center">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">AAA</td>
+    <td class="left">PSPEC</td>
+    <td class="center">ITGU</td>
+    <td class="center">CVNAS</td>
+    <td class="right">JEGO_QTY</td>
+    <td class="right">BALJU_QTY</td>
+    <td class="right">GUMDE</td>
+    <td class="right">DAEGI</td>
+    <td class="center">LAST_IN_DATE</td>
+    <td class="center">LAST_OUT_DATE</td>
+</td>

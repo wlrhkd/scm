@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.btn-line {
+	padding : 0;
+}
+
+.wt-8per {
+	width : 8%;
+}
+.wt-20per {
+	width : 20%;
+}
+.wt-40per {
+	width : 40%;
+}
+
+.pl70 {
+	padding-left : 70px;
+}

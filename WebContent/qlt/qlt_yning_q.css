@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+[type="checkbox"] {
+	width: 20px;
+}
+#thChk {
+	padding: 0;
+}
+
+.radio-box {
+	float: left;
+	width: 90px;
+}
+.mt7 {
+	margin-top: 7px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml28 {
+	margin-left: 28px;
+}
+
+.wt88 {
+	width: 88px;
+}
+
+label {
+	cursor: text;
+}
+/***********사용자 정의 스타일*************/
+
+.edit .pd5{
+	white-space : nowrap;
+}
+#tbl_body .dropdown {
+	text-overflow: clip;
+}
+.label_len {
+	width: 61px;
+    text-align: right;
+}
+.itnbr_label {
+	margin-left: 120px !important;
+}
+td {
+	height: 39px;
+}

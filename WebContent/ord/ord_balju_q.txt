@@ -1,0 +1,49 @@
+<tr>
+    <th class="wt120">발주번호</th>
+    <th class="wt50">항번</th>
+    <th class="wt110">품번</th>
+    <th class="wt180">품명</th>
+    <th class="wt150">규격</th>
+    <th class="wt150">재질</th>    
+    <th class="wt100">납기일자</th>    
+    <th class="wt80">발주량</th>
+    <th class="wt80">미납잔량</th> 
+    <th class="wt100">합격량</th> 
+    <th class="wt80">내역</th>
+</tr>|<tr>
+    <td class="center">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="center">GUDAT</td>
+    <td class="right">BALQTY</td>
+    <td class="right">RQTY</td>
+    <td class="right">BCUQTY</td>
+    <td class="popup center">D1</td>
+</td>|<tr>
+    <th class="wt120">발주번호</th>
+    <th class="wt50">항번</th>
+    <th class="wt110">품번</th>
+    <th class="wt180">품명</th>
+    <th class="wt150">규격</th>
+    <th class="wt150">재질</th>    
+    <th class="wt100">납기일자</th>    
+    <th class="wt80">발주량</th>
+    <th class="wt80">미납잔량</th> 
+    <th class="wt100">합격량</th> 
+    <th class="wt80">내역</th>
+</tr>|<tr>
+    <td class="center">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="center">GUDAT</td>
+    <td class="right">BALQTY</td>
+    <td class="right">RQTY</td>
+    <td class="right">BCUQTY</td>
+    <td class="popup center">D1</td>
+</td>

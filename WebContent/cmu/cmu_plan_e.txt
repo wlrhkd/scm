@@ -1,0 +1,15 @@
+<tr>
+    <th class="wtp10">NO</th>
+    <th class="wtp30">제목</th>
+    <th class="wtp30">공지업체</th>
+    <th class="wtp20">작성일</th>
+    <th>파일</th>
+    <th class="hidden">KEY</th>
+</tr>|<tr class="click">
+    <td class="center">ROWNUM1</td>
+    <td class="center">SUBJECT</td>
+    <td class="center">CRE_ID</td>
+    <td class="center">CRE_DT</td>
+    <td class="center">CHG_FILE</td>
+    <td class="hidden">NO</td>
+</td>

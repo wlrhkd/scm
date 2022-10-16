@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+[type="checkbox"] {
+	width: 20px;
+}
+#thChk {
+	padding: 0;
+}
+
+.radio-box {
+	float: left;
+	width: 90px;
+}
+.mt7 {
+	margin-top: 7px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml28 {
+	margin-left: 28px;
+}
+
+.wt88 {
+	width: 88px;
+}
+
+label {
+	cursor: text;
+}
+/***********사용자 정의 스타일*************/
+
+.sheet-wrap .sheet-box-mechul {
+    padding:10px 16px;
+    background-color:#ecf1f4;
+    height:calc(50% - 80px);
+}
+
+.table-box-wrap-mechul{
+    height: 83%;
+    overflow-x: hidden;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#tbl_body tr{
+	height : 40px;
+}
+
+/* 버튼 */
+#tbl_body tr .row_popup{
+	width: 120px;
+	height : 30px;
+	background-color : #EEEEEE;
+	margin : 0 auto;
+	cursor : pointer;
+	border-radius: 5px;
+	padding : 5px 0 0 0; 
+}
+
+#tbl_body tr td:nth-child(10){
+	padding : 0;
+}
+
+#tbl_body_bot tr{
+	height : 40px;
+}
+.modal-content .pop_btn{
+	margin : 0 0 4px 0;
+	padding : 0 0 0 690px;
+}

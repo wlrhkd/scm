@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+[type="checkbox"] {
+	width: 20px;
+}
+#thChk {
+	padding: 0;
+}
+
+.radio-box {
+	float: left;
+	width: 90px;
+}
+
+.mt7 {
+	margin-top: 7px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml28 {
+	margin-left: 3.8%;
+}
+
+.wt88 {
+	width: 88px;
+}
+
+label {
+	cursor: text;
+}
+.wt170{
+	width:170px;		
+}
+.form-block .cal-input .bg-gray{
+	padding-left:17px;
+}
+.wrap {
+	display: flex;
+	margin-left: 3%;
+}
+.wrap_left {
+	width: 29%;
+	border-right: 3px solid #ccc;
+}
+.wrap_right {
+	width: 29%;
+	margin-left: 3%;
+	border-right: 3px solid #ccc;
+}
+.label_len {
+	width: 23%;
+	padding: 0;
+}
+
+.cmu_wt {
+	width: 63%;
+}
+.form-block_mar {
+	margin-left: 3%;
+	margin-bottom: 10px;
+}
+.password_wrap {
+	margin-left: 3%;
+}
+.box {
+	margin-left: 2.5%;
+}
+
+/*------------------------------------------*/
+#tbl_wrap{
+	min-width: 100%;
+}
+#txt_chg_name{
+	width : 84% !important;
+}
+.file-input-div .file-find-btn{
+	cursor : pointer;
+}
+.table-box-wrap.type02 {
+   height: calc(100% - 2px) !important;
+}
+.detail-wrap{
+   height: calc(100% - 2px) !important;
+}
+#sel_date{
+    margin-left: 4px;
+}

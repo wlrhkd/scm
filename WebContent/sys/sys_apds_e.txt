@@ -1,0 +1,25 @@
+<tr>
+    <th class="wt30">거래처</th>
+    <th class="wt30">거래처명</th>
+</tr>|<tr class="click">
+    <td class="center">CVCOD</td>
+    <td class="left">CHG_NAME</td>
+</td>|<tr>
+    <th class="wt30">NO</th>
+    <th class="hidden">PNO</th>
+    <th class="wt150">제목</th>
+    <th class="wt80">작성자</th>
+    <th class="wt30">파일</th>
+    <th class="wt100">작성일</th>
+    <th class="hidden">내용</th>
+    <th class="hidden">수신처</th>
+</tr>|<tr class="click2">
+    <td class="center">ROWNUM1</td>
+    <td class="hidden">PNO</td>
+    <td class="left">SUBJECT</td>
+    <td class="center">CRE_ID</td>
+    <td class="chgFile center" id="test">CHG_FILE</td>
+    <td class="center">CRE_DT</td>
+    <td class="hidden">CONTENT</td>
+    <td class="hidden">CHG_ID</td>
+</td>

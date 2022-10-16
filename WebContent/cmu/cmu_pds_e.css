@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+[type="checkbox"] {
+	width: 20px;
+}
+#thChk {
+	padding: 0;
+}
+
+.radio-box {
+	float: left;
+	width: 90px;
+}
+
+.mt7 {
+	margin-top: 7px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml28 {
+	margin-left: 28px;
+}
+
+.wt88 {
+	width: 88px;
+}
+
+label {
+	cursor: text;
+}
+
+/************사용자 정의 CSS**************/
+#wrap .sheet-box .form-block {
+	float : left;
+	padding-bottom : 0px;
+}
+#wrap .sheet-box .row {
+	margin-bottom : 10px;
+}
+#wrap .sheet-box .left-row{
+	width : 55%;
+}
+
+#wrap .sheet-box .right-row{
+	width : 40%;
+	padding-left : 35px;
+	margin-left : 35px;
+	border-left : solid 1px #ccc;
+	height: calc(100% - 90px) !important;
+}
+
+#wrap .sheet-box .table-row{
+	width : 55%;
+	height: calc(100% - 90px) !important;
+}
+.filebox{
+	display : inline-block;
+}
+.file{
+	background : url(../img/icon/file.png) 50% 50% / 25px 25px no-repeat;
+	cursor : pointer;
+}
+.file_area{
+	
+}
+.table-type02{
+	min-width: 100%;
+}
+#txt_content{
+	margin : 25px 0 0 0;
+	height : 11rem;
+}

@@ -1,0 +1,23 @@
+<tr>
+    <th class="wt120">작업반</th>
+    <th class="wt120">작업장</th>
+    <th class="wt150">품목</th>
+    <th class="wt150">품번</th>
+    <th class="wt180">품명</th>
+    <th class="wt150">규격</th>    
+    <th class="wt80">순서</th>    
+    <th class="wt100">생산계획</th>
+    <th class="wt100">익일계획</th> 
+    <th class="wt150">비고</th>      
+</tr>|<tr>
+    <td class="left">JONAM</td>
+    <td class="left">WCDSC</td>
+    <td class="left">TITNM</td>
+    <td class="center">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="center">MOSEQ</td>
+    <td class="right">JISISU</td>
+    <td class="right">PLAN_JISISU</td>
+    <td class="left">RMKS</td>
+</td>

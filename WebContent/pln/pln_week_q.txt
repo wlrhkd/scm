@@ -1,0 +1,53 @@
+<tr>
+    <th class="wt150">품번</th>
+    <th class="wt200">품명</th>
+    <th class="wt180">규격</th>
+    <th class="wt200">재질</th>
+    <th class="wt80">합계</th>
+    <th class="wt80">D1</th>
+    <th class="wt80">D2</th>
+    <th class="wt80">D3</th>
+    <th class="wt80">D4</th>
+    <th class="wt80">D5</th>
+    <th class="wt80">D6</th>
+    <th class="wt80">D7</th>
+</tr>|<tr>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="right">SUM</td>
+    <td class="right">D1</td>
+    <td class="right">D2</td>
+    <td class="right">D3</td>
+    <td class="right">D4</td>
+    <td class="right">D5</td>
+    <td class="right">D6</td>
+    <td class="right">D7</td>
+</tr>|<tr>
+    <th class="wt150">품번</th>
+    <th class="wt200">품명</th>
+    <th class="wt180">규격</th>
+    <th class="wt200">재질</th>
+    <th class="wt80">합계</th>
+    <th class="wt80">오늘</th>
+    <th class="wt80">1일 후</th>
+    <th class="wt80">2일 후</th>
+    <th class="wt80">3일 후</th>
+    <th class="wt80">4일 후</th>
+    <th class="wt80">5일 후</th>
+    <th class="wt80">6일 후</th>
+</tr>|<tr>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="right">SUM</td>
+    <td class="right">D1</td>
+    <td class="right">D2</td>
+    <td class="right">D3</td>
+    <td class="right">D4</td>
+    <td class="right">D5</td>
+    <td class="right">D6</td>
+    <td class="right">D7</td>
+</tr>

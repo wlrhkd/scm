@@ -1,0 +1,27 @@
+<tr>
+    <th class="wt100">채권/채무</th>
+    <th class="wt80">이월</th>
+    <th class="wt80">차변</th>
+    <th class="wt80">대변</th>
+    <th class="wt80">잔액</th>
+    <th class="hidden">GRP</th>
+    <th class="hidden">RW</th>
+</tr>|<tr class="listSel">
+    <td class="center">COL</td>
+    <td class="center">IA</td>
+    <td class="center">DDRA</td>
+    <td class="center">DCRA</td>
+    <td class="center">RA</td>
+    <td class="hidden">GRP</td>
+    <td class="hidden">RW</td>
+</td>|<tr>
+    <th class="wt130">전표일자</th>
+    <th class="wt130">전표번호</th>
+    <th class="wt80">차변</th>
+    <th class="wt80">대변</th>
+</tr>|<tr>
+    <td class="center">ACC_DATE</td>
+    <td class="center">JUN_NO</td>
+    <td class="center">DR</td>
+    <td class="right">CR</td>
+</td>

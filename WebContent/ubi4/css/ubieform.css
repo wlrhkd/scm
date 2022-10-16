@@ -1,0 +1,1414 @@
+@charset "utf-8";
+
+/* reset */
+*{margin:0; padding:0;}
+
+/*main*/
+#UbiEFormViewer_DimBg {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all .3s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    z-index: 200;
+}
+
+#UbiEFormViewer_DimBg.is-on {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ubitoolbar */
+#UbiEFormViewer_Toolbar {
+    height: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #4289db;
+    z-index: 100;
+}
+
+/* grid */
+#UbiEFormViewer_Toolbar .grid {
+    float: left;
+    height: 60px;
+    text-align: center;
+    letter-spacing: -0.3em;
+}
+
+#UbiEFormViewer_Toolbar .grid.lft {
+    width: 40%;
+    text-align: left;
+}
+
+#UbiEFormViewer_Toolbar .grid.cen {
+    width: 20%;
+}
+
+#UbiEFormViewer_Toolbar .grid.rht {
+    width: 40%;
+}
+
+
+/* basic */
+
+#UbiEFormViewer_Toolbar ul {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#UbiEFormViewer_Toolbar ul li {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    padding: 12px 2px;
+}
+
+
+/* btn */
+#UbiEFormViewer_Toolbar a.btn,
+#UbiEFormViewer_Toolbar a.mbtn {
+    display: block;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#UbiEFormViewer_Toolbar a.editbtn,
+#UbiEFormViewer_Toolbar a.meditbtn {
+    display: block;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#UbiEFormViewer_Toolbar a.btn span,
+#UbiEFormViewer_Toolbar a.mbtn span {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    top: -9999em;
+    left: 0;
+    overflow: hidden;
+}
+
+#UbiEFormViewer_Toolbar a.editbtn span,
+#UbiEFormViewer_Toolbar a.editmbtn span {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    top: -9999em;
+    left: 0;
+    overflow: hidden;
+}
+
+#UbiEFormViewer_Toolbar a.btn:hover,
+#UbiEFormViewer_Toolbar a.btn:active,
+#UbiEFormViewer_Toolbar a.btn:focus,
+#UbiEFormViewer_Toolbar a.btn:visited,
+#UbiEFormViewer_Toolbar a.mbtn:active,
+#UbiEFormViewer_Toolbar a.mbtn:focus,
+#UbiEFormViewer_Toolbar a.mbtn:visited {
+    background-color: #1b44bc;
+    border-radius: 6px;
+    transition: all .2s
+}
+
+#UbiEFormViewer_Toolbar a.editbtn:active,
+#UbiEFormViewer_Toolbar a.editbtn:visited,
+#UbiEFormViewer_Toolbar a.editmbtn:active,
+#UbiEFormViewer_Toolbar a.editmbtn:visited {
+    background-color: #1b44bc;
+    border-radius: 6px;
+    transition: all .2s
+}
+
+/* icon */
+/* background:url()로 되어있던 부분을 JS파일로 옮김 */
+#UbiEFormViewer_Toolbar .ic-save,
+#UbiEFormViewer_Toolbar .ic-save.is-off,
+#UbiEFormViewer_Toolbar .ic-zoomin,
+#UbiEFormViewer_Toolbar .ic-zoomout,
+#UbiEFormViewer_Toolbar .ic-first,
+#UbiEFormViewer_Toolbar .ic-prev,
+#UbiEFormViewer_Toolbar .ic-next,
+#UbiEFormViewer_Toolbar .ic-last,
+#UbiEFormViewer_Toolbar .ic-edit,
+#UbiEFormViewer_Toolbar .ic-setup,
+#UbiEFormViewer_Toolbar .ic-eraser,
+#UbiEFormViewer_Toolbar .ic-edit-open,
+#UbiEFormViewer_Toolbar .ic-edit-close,
+#UbiEFormViewer_Toolbar .ic-version {
+}
+
+#UbiEFormViewer_Toolbar .ic-zoomin.is-off,
+#UbiEFormViewer_Toolbar .ic-zoomin.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-zoomin.is-off:active,
+#UbiEFormViewer_Toolbar .ic-zoomin.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-zoomin.is-off:visited,
+#UbiEFormViewer_Toolbar .ic-zoomout.is-off,
+#UbiEFormViewer_Toolbar .ic-zoomout.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-zoomout.is-off:active,
+#UbiEFormViewer_Toolbar .ic-zoomout.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-zoomout.is-off:visited,
+#UbiEFormViewer_Toolbar .ic-first.is-off,
+#UbiEFormViewer_Toolbar .ic-first.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-first.is-off:active,
+#UbiEFormViewer_Toolbar .ic-first.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-first.is-off:visited,
+#UbiEFormViewer_Toolbar .ic-prev.is-off,
+#UbiEFormViewer_Toolbar .ic-prev.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-prev.is-off:active,
+#UbiEFormViewer_Toolbar .ic-prev.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-prev.is-off:visited,
+#UbiEFormViewer_Toolbar .ic-next.is-off,
+#UbiEFormViewer_Toolbar .ic-next.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-next.is-off:active,
+#UbiEFormViewer_Toolbar .ic-next.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-next.is-off:visited,
+#UbiEFormViewer_Toolbar .ic-last.is-off,
+#UbiEFormViewer_Toolbar .ic-last.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-last.is-off:active,
+#UbiEFormViewer_Toolbar .ic-last.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-last.is-off:visited {
+	cursor: default;
+    background-color: transparent;
+}
+
+/* 저장하기 */
+#UbiEFormViewer_Toolbar .save {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    letter-spacing: 0;
+    vertical-align: top;
+}
+
+/* 모바일에서 버튼에 대한 hover 효과를 제거하기 위해 btn, mbtn 구분을 둠 */
+#UbiEFormViewer_Toolbar .save a.btn,
+#UbiEFormViewer_Toolbar .save a.mbtn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 36px;
+}
+
+#UbiEFormViewer_Toolbar .save a.btn:hover,
+#UbiEFormViewer_Toolbar .save a.btn:active,
+#UbiEFormViewer_Toolbar .save a.btn:focus,
+#UbiEFormViewer_Toolbar .save a.btn:visited,
+#UbiEFormViewer_Toolbar .save a.mbtn:active,
+#UbiEFormViewer_Toolbar .save a.mbtn:focus,
+#UbiEFormViewer_Toolbar .save a.mbtn:visited {
+    background-color: #e43939;
+    border-radius: 0;
+    transition: all .2s
+}
+
+#UbiEFormViewer_Toolbar .save.is-off a.btn:hover,
+#UbiEFormViewer_Toolbar .save.is-off a.btn:active,
+#UbiEFormViewer_Toolbar .save.is-off a.btn:focus,
+#UbiEFormViewer_Toolbar .save.is-off a.btn:visited,
+#UbiEFormViewer_Toolbar .save.is-off a.mbtn:active,
+#UbiEFormViewer_Toolbar .save.is-off a.mbtn:focus,
+#UbiEFormViewer_Toolbar .save.is-off a.mbtn:visited {
+	cursor: default;
+    background-color: transparent;
+}
+
+/* 버전 */
+#UbiEFormViewer_Toolbar .version {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    padding: 12px 12px;
+}
+
+/* 프린터 / 새로고침 */
+#UbiEFormViewer_Toolbar ul.refresh {
+    display: inline-block;
+    padding: 0 10px;
+    letter-spacing: 0;
+    vertical-align: top;
+}
+
+/* 확대/축소 */
+#UbiEFormViewer_Toolbar ul.zoom {
+    display: inline-block;
+    padding: 0 10px;
+    letter-spacing: 0;
+    vertical-align: top;
+}
+
+#UbiEFormViewer_Toolbar ul li.zoom-select-wrap {
+    display: block;
+    float: left;
+    width: 120px;
+    height: 36px;
+    padding: 12px 2px;
+}
+
+#UbiEFormViewer_Toolbar .zoom-selectbox.on {
+    border-color: #66afe9;
+    background-color: #1b44bc;
+    border-radius: 3px;
+}
+
+
+/* selectbox */
+#UbiEFormViewer_Toolbar .selectbox {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 36px;
+    z-index: 1;
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+    line-height: 1;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+#UbiEFormViewer_Toolbar .selectbox:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    margin-top: -1px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+
+#UbiEFormViewer_Toolbar .selectbox label {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    padding: .8em .5em;
+    color: #fff;
+    z-index: -1;
+}
+
+#UbiEFormViewer_Toolbar .selectbox select {
+    width: 100%;
+    height: 36px;
+    line-height: normal;
+    font-family: inherit;
+    color: #333;
+    background: #fff;
+    line-height: 36px;
+    padding: 0 10px;
+    border: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#UbiEFormViewer_Toolbar .selectbox.focus {
+    border-color: #66afe9;
+    background-color: #1b44bc;
+    border-radius: 3px;
+}
+
+
+/* 편집 */
+#UbiEFormViewer_Toolbar .edit-open {
+    display: none;
+    float: right;
+    width: 36px;
+    height: 36px;
+    padding: 12px 12px;
+}
+
+#UbiEFormViewer_Toolbar .edit-wrap .edit-close {
+    display: none;
+}
+
+#UbiEFormViewer_Toolbar .edit-wrap {
+    display: inline-block;
+    background: #4289db;
+    height: 60px;
+    position: absolute;
+    right: 3%;
+    margin-right: 38px;
+}
+
+#UbiEFormViewer_Toolbar .edit-wrap>ul {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#UbiEFormViewer_Toolbar .edit-wrap>ul>li {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    padding: 12px 6px;
+}
+
+#UbiEFormViewer_Toolbar .edit-wrap .ic-edit.is-on,
+#UbiEFormViewer_Toolbar .edit-wrap .ic-setup.is-on,
+#UbiEFormViewer_Toolbar .edit-wrap .ic-eraser.is-on {
+    background-color: #1b44bc;
+    border-radius: 6px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+#UbiEFormViewer_Toolbar .edit-wrap .ic-edit.is-off,
+#UbiEFormViewer_Toolbar .edit-wrap .ic-setup.is-off,
+#UbiEFormViewer_Toolbar .edit-wrap .ic-eraser.is-off,
+#UbiEFormViewer_Toolbar .ic-edit-open.popop-open.is-off {
+}
+
+#UbiEFormViewer_Toolbar .ic-edit.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-edit.is-off:active,
+#UbiEFormViewer_Toolbar .ic-edit.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-edit.is-off:visited,
+#UbiEFormViewer_Toolbar .ic-setup.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-setup.is-off:active,
+#UbiEFormViewer_Toolbar .ic-setup.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-setup.is-off:visited,
+#UbiEFormViewer_Toolbar .ic-eraser.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-eraser.is-off:active,
+#UbiEFormViewer_Toolbar .ic-eraser.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-eraser.is-off:visited,
+#UbiEFormViewer_Toolbar .ic-edit-open.popop-open.is-off:hover,
+#UbiEFormViewer_Toolbar .ic-edit-open.popop-open.is-off:active,
+#UbiEFormViewer_Toolbar .ic-edit-open.popop-open.is-off:focus,
+#UbiEFormViewer_Toolbar .ic-edit-open.popop-open.is-off:visited {
+	cursor: default;
+    background-color: transparent;
+}
+
+/* 펜설정 */
+#UbiEFormViewer_PenConfigLayer {
+    visibility: hidden;
+    opacity: 0;
+    width: 220px;
+    text-align: left;
+    background: #fff;
+    padding: 18px 20px 25px;
+    border-radius: 0 0 5px 5px;
+    position: fixed;
+    right: 0%;
+    z-index: 300;
+}
+
+#UbiEFormViewer_PenConfigLayer.is-on {
+    visibility: visible;
+    opacity: 1;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>h4 {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 15px 2px 5px;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>h4:first-of-type {
+    padding-top: 0;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul {
+    padding: 0;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul>li {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+#UbiEFormViewer_PenConfigLayer .setting01 {
+    width: 100%;
+    height: 90px;
+}
+
+#UbiEFormViewer_PenConfigLayer .setting02,
+#UbiEFormViewer_PenConfigLayer .setting03 {
+    width: 100%;
+    height: 45px;
+}
+
+
+/* 색상선택 */
+
+#UbiEFormViewer_PenConfigLayer circle,
+#UbiEFormViewer_PenConfigLayer rect {
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin: 7px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-red {
+    background: #ef2121;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-orenge {
+    background: #ff8400;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-yellow {
+    background: #f6dc00;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-green {
+    background: #38ee00;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-blue {
+    background: #005aff;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-navy {
+    background: #0900c3;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-purple {
+    background: #8100ef;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-lightgrey {
+    background: #ccc;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-grey {
+    background: #777;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-color>li>a.c-black {
+    background: #000;
+}
+
+
+/* 크기선택 */
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-size>li>a {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: 0;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-size>li>a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-size>li>a.s-1 {
+    background: #ef2121;
+    display: block;
+    width: 3px;
+    height: 3px;
+    margin: 50% auto;
+}
+
+
+/* 불투명도선택 */
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-opacity>li>a {
+    display: block;
+    position: relative;
+    background: #ef2121;
+    width: 26px;
+    height: 26px;
+    margin: 7px;
+    border-radius: 2px;
+    padding: 0;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-opacity>li>a:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 39px;
+    height: 39px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-opacity>li>a.o-10 {
+    opacity: .1;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-opacity>li>a.o-30 {
+    opacity: .3;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-opacity>li>a.o-50 {
+    opacity: .5;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-opacity>li>a.o-70 {
+    opacity: .7;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul.pen-opacity>li>a.o-100 {
+    opacity: 1;
+}
+
+#UbiEFormViewer_PenConfigLayer .edit-setup>ul>li>a span {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    top: -9999em;
+    left: 0;
+    overflow: hidden;
+}
+
+
+/* page-warp */
+
+#UbiEFormViewer_PreviewFrame {
+    /*position: relative;*//*IE에서 수직메뉴바가 가려져 나오는 문제로 제거*/
+    /*width: 100%;*/
+    display: block;
+    /*height: calc(100vh - 60px);*/
+    text-align: center;
+    background-color: #e9e9f5;
+    /*padding-bottom: 50px;*/
+    /*box-sizing: border-box;*/
+    overflow: auto;
+}
+
+
+/* 페이지 영역 */
+/*
+#UbiEForm_Pages {
+    position: relative;
+    margin: 70px auto 0;
+    width: 50%;
+}
+
+#UbiEForm_Pages img.testimg {
+    width: 100%;
+}
+
+#UbiEForm_Pages .sign-map {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#UbiEForm_Pages .sign-map a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#UbiEForm_Pages .sign-map canvas {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(50, 125, 240, 0.1);
+    border: 2px #327df0 solid;
+    box-sizing: border-box;
+}
+*/
+
+/* 편집모드 안내 */
+#UbiEFormViewerDiv .editstatus-wrap {
+    position: fixed;
+    width: 100%;
+    padding: 55px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    left: 0px;
+    z-index: 1;
+}
+
+#UbiEFormViewerDiv .editstatus {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 132, 0, 0.5);
+    border-radius: 10px;
+    line-height: 10px;
+    font-size: 12px;
+    color: #fff;
+    text-align:left;
+}
+
+#UbiEFormViewerDiv .editstatus span {
+    display: inline-block;
+}
+
+/* 페이지 안내 */
+#UbiEFormViewerDiv .navigation-wrap {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+#UbiEFormViewerDiv .navigation {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(35, 114, 185, 0.5);
+    border-radius: 10px;
+    line-height: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+#UbiEFormViewerDiv .navigation span {
+    display: inline-block;
+}
+
+
+/* version */
+#UbiEFormViewerDiv .pop-version {
+    visibility: hidden;
+    width: 360px;
+    height: 307px;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -153px;
+    z-index: 300;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+#UbiEFormViewerDiv .pop-version.is-on {
+    visibility: visible;
+    opacity: 1;
+}
+
+#UbiEFormViewerDiv .pop-version .pop-container {
+    position: relative;
+    padding: 0;
+}
+
+#UbiEFormViewerDiv .pop-version h3 {
+    position: relative;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px #ddd solid;
+    padding: 20px 0;
+}
+
+#UbiEFormViewerDiv .pop-version .pop-conts {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#UbiEFormViewerDiv .pop-version .pop-conts p.pop-txt {
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+}
+
+#UbiEFormViewerDiv .pop-version .pop-conts p.pop-txt span {
+    display: inline-block;
+}
+
+#UbiEFormViewerDiv .pop-version .pop-conts p.pop-txt a.homelink {
+    display: block;
+    font-size: 15px;
+    color: #005aff;
+    padding: 20px 0;
+}
+
+#UbiEFormViewerDiv .pop-error {
+    visibility: hidden;
+    width: 360px;
+    height: 307px;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -153px;
+    z-index: 300;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+#UbiEFormViewerDiv .pop-error.is-on {
+    visibility: visible;
+    opacity: 1;
+}
+
+#UbiEFormViewerDiv .pop-error .pop-container {
+    position: relative;
+    padding: 0;
+}
+
+#UbiEFormViewerDiv .pop-error h3 {
+    position: relative;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px #ddd solid;
+    padding: 20px 0;
+}
+
+#UbiEFormViewerDiv .pop-error .pop-conts {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#UbiEFormViewerDiv .pop-error .pop-conts p.pop-txt {
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin: 10px;
+    padding-bottom: 50px;
+}
+
+#UbiEFormViewerDiv .pop-error .pop-conts p.pop-txt span {
+    display: inline-block;
+}
+
+#UbiEFormViewerDiv .pop-error .pop-conts p.pop-txt a.homelink {
+    display: block;
+    font-size: 15px;
+    color: #005aff;
+    padding: 20px 0;
+}
+
+#UbiEFormViewerDiv .pop-notice {
+    visibility: hidden;
+    width: 360px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -153px;
+    z-index: 300;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+#UbiEFormViewerDiv .pop-notice.is-on {
+    visibility: visible;
+    opacity: 1;
+}
+
+#UbiEFormViewerDiv .pop-notice .pop-container {
+    position: relative;
+    padding: 0;
+}
+
+#UbiEFormViewerDiv .pop-notice h3 {
+    position: relative;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px #ddd solid;
+    padding: 20px 0;
+}
+
+#UbiEFormViewerDiv .pop-notice .pop-conts {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#UbiEFormViewerDiv .pop-notice .pop-conts p.pop-txt {
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    padding-bottom: 50px;
+}
+
+#UbiEFormViewerDiv .pop-notice .pop-conts p.pop-txt span {
+    display: inline-block;
+}
+
+#UbiEFormViewerDiv a.btn-layerClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#UbiEFormViewerDiv a.btn-layerClose span {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    top: -9999em;
+    left: 0;
+    overflow: hidden;
+}
+
+#UbiEFormViewerDiv a.btn-footClose {
+    position: relative;
+    display: inline-block;
+    background: #3e6bdd;
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 30px;
+    line-height: 26px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* sign */
+#UbiEFormViewerDiv .sign-wrap {
+    visibility: hidden;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 300;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+#UbiEFormViewerDiv .sign-wrap.is-on {
+    visibility: visible;
+    opacity: 1;
+}
+
+#UbiEFormViewerDiv .sign-container {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    z-index: 10;
+}
+
+#UbiEFormViewerDiv .sign-container .sign-canvas {
+    overflow: hidden;
+    /*width: 640px;*/
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#UbiEFormViewerDiv .sign-container .sign-canvas canvas {
+    display: inline-block;
+    /*width: 420px;
+    height: 180px;*/
+    border: 1px solid #dbdbe6;
+    border-radius: 3px;
+    margin: 0;
+}
+/*
+#UbiEFormViewerDiv .sign-container .sign-canvas .btn-sign {
+    display: inline-block;
+    float: right;
+    text-align: center;
+    padding: 0;
+}
+*/
+#UbiEFormViewerDiv .sign-container .sign-canvas .btn-sign {
+    display: block;
+    float: none;
+    /*padding: 0;*/
+    padding: 5px 0 0 0;
+}
+
+#UbiEFormViewerDiv .sign-container .sign-canvas .btn-sign a {
+    /*display: block;*/
+    display: inline-block;
+    font-size: 15px;
+    line-height: 26px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+#UbiEFormViewerDiv .sign-container .sign-canvas .btn-sign a.btn-ok {
+    background: #4289db;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+#UbiEFormViewerDiv .sign-container .sign-canvas .btn-sign a.btn-reset {
+    background: #f2f2f2;
+    color: #777;
+    padding: 10px 40px;
+}
+
+#UbiEFormViewerDiv a.btn-signClose {
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    margin-left: -21px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+#UbiEFormViewerDiv a.btn-signClose span {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    top: -9999em;
+    left: 0;
+    overflow: hidden;
+}
+
+@media all and (max-width:960px) {
+    /* grid */
+    #UbiEFormViewer_Toolbar .grid.lft {
+        width: 37%;
+    }
+    #UbiEFormViewer_Toolbar .grid.cen {
+        width: 26%;
+    }
+    #UbiEFormViewer_Toolbar .grid.rht {
+        width: 37%;
+    }
+    /* basic */
+    #UbiEFormViewer_Toolbar ul {
+        padding: 0px;
+    }
+    #UbiEFormViewer_Toolbar ul li {
+        display: block;
+        float: left;
+        width: 36px;
+        height: 36px;
+        /*padding: 12px 0px;*/
+    }
+    /* 프린터 / 새로고침 */
+    #UbiEFormViewer_Toolbar ul.refresh {
+        padding: 0px;
+    }
+    /* 확대/축소 */
+    /*
+    #UbiEFormViewer_Toolbar ul.zoom {
+        padding: 0px;
+    }
+    */
+    /* 편집 */
+    #UbiEFormViewer_Toolbar .edit-wrap>ul>li {
+        /*padding: 12px 2px;*/
+    }
+}
+
+@media all and (max-width:780px) {
+    #UbiEFormViewer_Toolbar ul li.zoom-select-wrap {
+        display: none;
+    }
+    /* selectbox */
+    #UbiEFormViewer_Toolbar .selectbox {
+        display: none;
+    }
+    /*
+    #UbiEForm_Pages {
+        width: 80%;
+    }
+    */
+}
+
+@media all and (max-width:640px) {
+    /* ubitoolbar */
+    #UbiEFormViewer_Toolbar {
+        height: 42px;
+    }
+    #UbiEFormViewer_Toolbar .grid {
+        height: 42px;
+    }
+    #UbiEFormViewer_Toolbar .grid.lft {
+        width: 30%;
+    }
+    #UbiEFormViewer_Toolbar .grid.cen {
+        width: 40%;
+    }
+    #UbiEFormViewer_Toolbar .grid.rht {
+        width: 30%;
+    }
+    /* btn */
+    #UbiEFormViewer_Toolbar ul li {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+    }
+    #UbiEFormViewer_Toolbar a.btn,
+    #UbiEFormViewer_Toolbar a.mbtn {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    /* 저장하기 */
+    #UbiEFormViewer_Toolbar .save {
+        display: block;
+        float: left;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+    }
+    #UbiEFormViewer_Toolbar .save a.btn,
+    #UbiEFormViewer_Toolbar .save a.mbtn {
+        display: block;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 30px;
+    }
+    #UbiEFormViewer_Toolbar .save {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+    }
+    /* 버전 */
+    #UbiEFormViewer_Toolbar .version {
+        display: none;
+    }
+    /* 프린터 / 새로고침 */
+    #UbiEFormViewer_Toolbar ul.refresh {
+        display: none;
+        padding: 0 0px;
+    }
+    /* 확대/축소 */
+    #UbiEFormViewer_Toolbar ul.zoom {
+        display: none;
+        padding: 0 0px;
+    }
+    /* 편집 */
+    #UbiEFormViewer_Toolbar .edit-open {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 6px 6px;
+    }
+    #UbiEFormViewer_Toolbar .edit-wrap {
+        display: none;
+        position: fixed; /*20200116 수정*/
+        /*top: 0;*/
+        right: 0;
+        padding: 0 0px;
+        background: #0b1460;
+        margin-right: 0;
+        height: 100vh;
+		height:100%; /*20200110 수정*/
+        z-index: 1001;
+    }
+    #UbiEFormViewer_Toolbar .edit-wrap .edit-close {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 6px 6px;
+        margin-bottom: 46px;
+    }
+    #UbiEFormViewer_Toolbar .edit-wrap ul {
+        display: block;
+        padding: 0 6px;
+    }
+    #UbiEFormViewer_Toolbar .edit-wrap ul li {
+        display: block;
+        float: none;
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+    }
+    #UbiEFormViewer_PenConfigLayer {
+        visibility: hidden;
+        /*top: 92px;*/
+        left: auto;
+        right: 42px;
+        border-radius: 5px 0 0 5px;
+    }
+    /* sign */
+    #UbiEFormViewerDiv .sign-container {
+        width: 100%;
+    }
+    #UbiEFormViewerDiv .sign-container .sign-canvas {
+        overflow: hidden;
+        width: 100%;
+        padding: 30px 0;
+    }
+    #UbiEFormViewerDiv .sign-container .sign-canvas canvas {
+        display: block;
+        /*width: 360px;
+        height: 154px;*/
+        margin: 0 auto;
+    }
+    #UbiEFormViewerDiv .sign-container .sign-canvas .btn-sign {
+        display: block;
+        float: none;
+        padding: 5px 0 0 0;
+    }
+    #UbiEFormViewerDiv .sign-container .sign-canvas .btn-sign a {
+        display: inline-block;
+    }
+    #UbiEFormViewerDiv .sign-container .sign-canvas .btn-sign a.btn-ok {
+        padding: 10px 40px;
+    }
+    /*
+    #UbiEForm_Pages {
+        width: calc(100% - 40px);
+        margin: 50px auto 0;
+    }
+    */
+    #UbiEFormViewer_PreviewFrame {
+        /*height: calc(100vh - 42px);*/
+    }
+}
+
+div#ubireport_eform_BatchSignPad {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin:0px;
+  text-align:center;
+  z-index: 100;
+}
+
+div#ubireport_eform_BatchSignPad #HeaderArea {
+  font-family: 맑은고딕;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #666;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div#ubireport_eform_BatchSignPad #SignArea {
+  width:300px;
+  height:150px;
+  border: 1px lightblue solid;
+  position: relative;
+  left: 50%;
+  margin-left:-150px;
+}
+
+div#ubireport_eform_BatchSignPad #SignButtonArea {
+  width:300px;
+  height:50px;
+  padding-top: 10px;
+  position: relative;
+  left: 50%;
+  margin-left:-150px;
+  text-align: right;
+}
+
+div#ubireport_eform_BatchSignPad#SignButtonArea #BatchSignBtnOk {
+  width: 70px;
+  height: 25px;
+  background: white;
+  border: 1px lightgray solid;
+}
+
+div#ubireport_eform_BatchSignPad#SignButtonArea #BatchSignBtnCancel {
+  width: 70px;
+  height: 25px;
+  background: white;
+  border: 1px lightblue solid;
+  margin-left: 5px;
+}
+
+div#ubireport_eform_BatchSignPad#SignButtonArea #BatchSignBtnInit {
+  width: 70px;
+  height: 25px;
+  background: white;
+  border: 1px lightblue solid;
+  margin-left: 5px;
+}
+
+div#ubireport_eform_BatchSignPad #FooterArea {
+}
+
+.ubieforminput {
+	position: absolute;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.ubieforminput input {
+	display: none;	
+}
+
+/* Create a custom checkbox */
+.ubicheckbox {
+	position: absolute;
+	color: #ffffff;
+	background-color: #ffffff;
+	border: 1px solid #4289DB;
+	border-radius : 3px;	
+}
+
+/* When the checkbox is checked, add a blue background */
+.ubieforminput input:checked ~ .ubicheckbox {
+  background-color: #4289DB;
+}
+
+/* Create the ubicheckbox/indicator (hidden when not checked) */
+.ubicheckbox:after {
+  content: "";
+  display: none;
+}
+
+/* Show the ubicheckbox when checked */
+.ubieforminput input:checked ~ .ubicheckbox:after {
+  content: "\2713\0020";
+  display: inline-block;
+}
+
+
+
+/* Create a custom radio button */
+.ubiradiobtn {
+	position: absolute;
+	color: #ffffff;
+	background-color: #ffffff;
+	border: 1px solid #4289DB;
+	border-radius: 50%;
+}
+
+.ubiradiocheckedbtn {
+	display: inline-block;
+	position: absolute;
+	background: #ffffff;
+	border-radius: 100%;	
+}
+
+/* When the radio button is checked, add a blue background */
+.ubieforminput input:checked ~ .ubiradiobtn {
+	background-color: #4289DB;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.ubiradiobtn:after {
+	content: "";
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.ubieforminput input:checked ~ .ubiradiobtn:after {
+/*	content: "\2022\0020";
+	display: inline-block;*/	
+}
+
+/* Style the indicator (dot/circle) */
+/*
+아래와 같이 사용을 해야하나 resize 처리 문제로 위의 내용과 같이 처리함 
+.ubieforminput .ubiradiobtn:after {
+	left: 5px;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: white;
+}
+*/

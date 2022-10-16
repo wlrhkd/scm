@@ -1,0 +1,37 @@
+<tr>
+    <th class="wt150">품번</th>
+    <th class="wt200">품명</th>
+    <th class="wt180">규격</th>
+    <th class="wt200">재질</th>
+    <th class="wt80">합계</th>
+    <th class="wt80">1월</th>
+    <th class="wt80">2월</th>
+    <th class="wt80">3월</th>
+    <th class="wt80">4월</th>
+    <th class="wt80">5월</th>
+    <th class="wt80">6월</th>
+    <th class="wt80">7월</th>
+    <th class="wt80">8월</th>
+    <th class="wt80">9월</th>
+    <th class="wt80">10월</th>
+    <th class="wt80">11월</th>
+    <th class="wt80">12월</th>
+</tr>|<tr>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="right">SUM</td>
+    <td class="right">QTY_01</td>
+    <td class="right">QTY_02</td>
+    <td class="right">QTY_03</td>
+    <td class="right">QTY_04</td>
+    <td class="right">QTY_05</td>
+    <td class="right">QTY_06</td>
+    <td class="right">QTY_07</td>
+    <td class="right">QTY_08</td>
+    <td class="right">QTY_09</td>
+    <td class="right">QTY_10</td>
+    <td class="right">QTY_11</td>
+    <td class="right">QTY_12</td>
+</td>

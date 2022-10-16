@@ -1,0 +1,15 @@
+<tr>
+    <th class="wt30">사용자ID</th>
+    <th class="wt55">사용자명칭</th>
+    <th class="wt30">거래처</th>
+    <th class="wt55">거래처명</th>
+    <th class="wt50">사업장</th>
+    <th class="hidden">CHG_ID2</th>
+</tr>|<tr class="click">
+    <td class="center">CHG_ID</td>
+    <td class="left">CHG_NAME</td>
+    <td class="center">CVCOD</td>
+    <td class="left">CVNAS</td>
+    <td class="left">SAUPJ</td>
+    <td class="hidden">CHG_ID2</td>
+</td>

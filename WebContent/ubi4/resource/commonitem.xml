@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<CommonItem>
+	<CommonText key="COMPANY">UbiDecision</CommonText>
+	<CommonText key="COMPANY_TEL">02-558-6996</CommonText>
+	<CommonText key="HOMEPAGE">http://www.ubireport.com</CommonText>
+	<CommonText key="UBIREPORT">http://www.ubireport.com</CommonText>
+	<CommonImage key="LOGO">LOGO.jpg</CommonImage>
+</CommonItem>

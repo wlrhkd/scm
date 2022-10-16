@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>UbiReport Servlet</display-name>
+	<servlet>
+		<servlet-name>UbiServer</servlet-name>
+		<servlet-class>com.ubireport.server.UbiServer4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UbiServer</servlet-name>
+		<url-pattern>/UbiServer</url-pattern>
+	</servlet-mapping>
+</web-app>

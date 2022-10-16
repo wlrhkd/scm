@@ -1,0 +1,59 @@
+<tr>
+    <th class="wt50">선택</th>
+    <th class="wt150">납품번호</th>
+    <th class="wt150">발주번호</th>
+    <th class="wt50">순번</th>
+    <th class="wt120">납품사업장</th>
+    <th class="wt110">출발일시</th>
+    <th class="wt120">품번</th>
+    <th class="wt180">품명</th>
+    <th class="wt130">규격</th>
+    <th class="wt130">재질</th>
+    <th class="wt70">수량</th>
+    <th class="wt100">검사</th> 
+    <th class="wt80">공장</th>
+    <th class="hidden"></th>
+</tr>|<tr>
+    <td class="chkbox chksize center">listChk</td>
+    <td class="center">JPNO</td>
+    <td class="center">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+    <td class="center">IPSAUPJ</td>
+    <td class="center">CRT_DT</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="center">JIJIL</td>
+    <td class="right">NAQTY</td>
+    <td class="center">QCGUB</td>
+    <td class="center">FACTORY</td>
+    <td class="hidden">JPNUM</td>
+</td>|<tr>
+    <th class="wt150">납품번호</th>
+    <th class="wt150">발주번호</th>
+    <th class="wt50">순번</th>
+    <th class="wt120">납품사업장</th>
+    <th class="wt110">출발일시</th>
+    <th class="wt120">품번</th>
+    <th class="wt180">품명</th>
+    <th class="wt130">규격</th>
+    <th class="wt130">재질</th>
+    <th class="wt70">수량</th>
+    <th class="wt100">검사</th> 
+    <th class="wt80">공장</th>
+    <th class="hidden"></th>
+</tr>|<tr>
+    <td class="center">JPNO</td>
+    <td class="center">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+    <td class="center">IPSAUPJ</td>
+    <td class="center">CRT_DT</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="center">JIJIL</td>
+    <td class="right">NAQTY</td>
+    <td class="center">QCGUB</td>
+    <td class="center">FACTORY</td>
+    <td class="hidden">JPNUM</td>
+</td>

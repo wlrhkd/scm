@@ -1,0 +1,23 @@
+<tr>
+    <th class="wt110">품번</th>
+    <th class="wt110">품명</th>
+    <th class="wt80">규격</th>
+    <th class="wt80">단위</th>
+    <th class="wt80">전월이월</th>
+    <th class="wt80">입고</th>
+    <th class="wt80">출고</th>
+    <th class="wt80">재고</th>
+    <th class="wt80">업체명</th>
+    <th class="wt80">단가</th>
+</tr>|<tr>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="center">UNMSR</td>
+    <td class="center">JUN_QTY</td>
+    <td class="center">IN_QTY</td>
+    <td class="center">OUT_QTY</td>
+    <td class="center">JEGO_QTY</td>
+    <td class="center">CVNAS2</td>
+    <td class="center">DANGA</td>
+</tr>

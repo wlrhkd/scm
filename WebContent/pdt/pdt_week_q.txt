@@ -1,0 +1,45 @@
+<tr>
+    <th class="wt100">품번</th>
+    <th class="wt150">품명</th>
+    <th class="wt70">규격</th>
+    <th class="wt70">재질</th>
+    <th class="wt70">합계</th>
+    <th class="wt80">D1</th>
+    <th class="wt80">D2</th>
+    <th class="wt80">D3</th>
+    <th class="wt80">D4</th>
+    <th class="wt80">D5</th>
+    <th class="wt80">D6</th>
+    <th class="wt80">D7</th>
+    <th class="wt50">차종</th>
+    <th class="hidden">사업장</th>
+    <th class="hidden">D8</th>
+    <th class="hidden">D9</th>
+    <th class="hidden">D10</th>
+    <th class="hidden">D11</th>
+    <th class="hidden">D12</th>
+    <th class="hidden">D13</th>
+    <th class="hidden">D14</th>
+</tr>|<tr>
+    <td class="center">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="right">SUM</td>
+    <td class="right">D1</td>
+    <td class="right">D2</td>
+    <td class="right">D3</td>
+    <td class="right">D4</td>
+    <td class="right">D5</td>
+    <td class="right">D6</td>
+    <td class="right">D7</td>
+    <td class="center">CARCODE</td>
+    <td class="hidden">SAUPJ</td>
+    <td class="hidden">D8</td>
+    <td class="hidden">D9</td>
+    <td class="hidden">D10</td>
+    <td class="hidden">D11</td>
+    <td class="hidden">D12</td>
+    <td class="hidden">D13</td>
+    <td class="hidden">D14</td>
+</tr>

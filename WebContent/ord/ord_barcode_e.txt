@@ -1,0 +1,85 @@
+<tr>
+	<th class="wt50" id="thChk"><input type="checkbox" name="checkAll" id="cbx_checkAll"></th>
+    <th class="wt130">납품번호</th>
+    <th class="wt150">품번</th>
+    <th class="wt150">품명</th>
+    <th class="wt130">규격</th>
+    <th class="wt50">수량</th>
+    <th class="wt70">용기적입수</th>
+    <th class="wt70">용기수량</th>
+    <th class="wt80">LOT NO</th>
+    <th class="wt130">비고</th>
+    <th class="wt130">고객발주번호</th>
+    <th class="wt130">발주번호</th>
+    <th class="wt50">순번</th>
+    <th class="hidden">NADATE</th>
+</td>|<tr>
+	<td class="chkbox center">listChk</td>
+    <td class="center">JPNO</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="right">NAQTY</td>
+    <td class="right">POQTY</td>
+    <td class="center">POJQTY</td>
+    <td class="center">LOTNO</td>
+    <td class="center">BIGO</td>
+    <td class="center">ORDER_NO</td>
+    <td class="center">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+    <td class="hidden">NADATE</td>
+</td>|<tr>
+    <th class="wt130">납품번호</th>
+    <th class="wt150">품번</th>
+    <th class="wt150">품명</th>
+    <th class="wt130">규격</th>
+    <th class="wt50">수량</th>
+    <th class="wt70">용기적입수</th>
+    <th class="wt50">용기수량</th>
+    <th class="wt80">LOT NO</th>
+    <th class="wt130">비고</th>
+    <th class="wt130">고객발주번호</th>
+    <th class="wt130">발주번호</th>
+    <th class="wt50">순번</th>
+    <th class="hidden">NADATE</th>
+</td>|<tr>
+    <td class="center">JPNO</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="right">NAQTY</td>
+    <td class="right">POQTY</td>
+    <td class="right">POJQTY</td>
+    <td class="center">LOTNO</td>
+    <td class="center">BIGO</td>
+    <td class="center">ORDER_NO</td>
+    <td class="center">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+    <td class="hidden">NADATE</td>
+</td>|<tr>
+    <th class="wt130">납품번호</th>
+    <th class="wt150">품번</th>
+    <th class="wt150">품명</th>
+    <th class="wt130">규격</th>
+    <th class="wt50">수량</th>
+    <th class="wt70">용기적입수</th>
+    <th class="wt70">용기수량</th>
+    <th class="wt80">LOT NO</th>
+    <th class="wt130">비고</th>
+    <th class="wt130">고객발주번호</th>
+    <th class="wt130">발주번호</th>
+    <th class="wt50">순번</th>
+</td>|<tr>
+    <td class="center">JPNO</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="right">NAQTY</td>
+    <td class="right">POQTY</td>
+    <td class="center">POJQTY</td>
+    <td class="center">LOTNO</td>
+    <td class="center">BIGO</td>
+    <td class="center">ORDER_NO</td>
+    <td class="center">BALJPNO</td>
+    <td class="center">BALSEQ</td>
+</td>

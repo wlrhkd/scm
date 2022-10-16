@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.wt_a {
+	width : 34%;
+}
+.wt_sauj {
+	width: 70%;
+}
+.paginate .prevI {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-right: 20px;
+    line-height: 27px;
+    background-image:url(../../img/contents/icon_paging_left.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border:1px solid #bcc4cf;
+}
+.paginate .nextI {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-left: 20px;
+    line-height: 27px;
+    background-image:url(../../img/contents/icon_paging_right.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border:1px solid #bcc4cf;
+}
+.modal-layer .modal-content .label {min-width: 0;}

@@ -1,0 +1,27 @@
+<tr>
+    <th class="wt80">수불일자</th>
+    <th class="wt100">수불구분</th>
+    <th class="wt120">품번</th>
+    <th class="wt120">품명</th>
+    <th class="wt120">규격</th>
+    <th class="wt50">단위</th>
+    <th class="wt80">수량</th>
+    <th class="wt80">단가</th>
+    <th class="wt80">금액</th>
+    <th class="wt120">수불전표</th>
+    <th class="wt70">비고</th>
+    <th class="wt120">거래처</th>
+</tr>|<tr>
+    <td class="center">IO_DATE</td>
+    <td class="center">IONAM</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">ISPEC</td>
+    <td class="center">UNMSR</td>
+    <td class="center">CHUL</td>
+    <td class="center">DANGA</td>
+    <td class="center">AMT</td>
+    <td class="center">IOJPNO</td>
+    <td class="center">BIGO</td>
+    <td class="center">CVNAS2</td>
+</tr>

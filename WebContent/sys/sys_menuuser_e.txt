@@ -1,0 +1,57 @@
+<tr>
+	<th class="wtp6" id="thChk"><input type="checkbox" name="cbx_checkAll" id="cbx_checkAll"></th>
+    <th class="wtp15">대분류</th>
+    <th class="wtp6"> </th>
+    <th class="wtp18">중분류</th>
+    <th class="wtp6"> </th>
+    <th class="wtp25">소분류</th>
+    <th class="hidden">MAIN_ID</th>
+    <th class="hidden">SUB1_ID</th>
+    <th class="hidden">SUB2_ID</th>
+    <th class="hidden">WINDOW_NAME</th>
+    <th class="hidden">IO_GUBUN</th>
+    <th class="hidden">PAGE_URL</th>
+    <th class="hidden">SUB2_NAME</th>
+</tr>|<tr class="click">
+    <td class="chkbox">listChk</td>
+    <td class="center">TIT1</td>
+    <td class="center">SORT3</td>
+    <td class="center">TIT2</td>
+    <td class="center">SORT4</td>
+    <td class="center">TIT3</td>
+    <td class="hidden">MAIN_ID</td>
+    <td class="hidden">SUB1_ID</td>
+    <td class="hidden">SUB2_ID</td>
+    <td class="hidden">WINDOW_NAME</td>
+    <td class="hidden">IO_GUBUN</td>
+    <td class="hidden">PAGE_URL</td>
+    <td class="hidden">SUB2_NAME</td>
+</td>|<tr>
+	<th class="wtp6" id="thChk_02"><input type="checkbox" name="cbx_checkAll_02" id="cbx_checkAll_02"></th>
+    <th class="wtp15">대분류</th>
+    <th class="wtp6 hidden"> </th>
+    <th class="wtp18">중분류</th>
+    <th class="wtp6 hidden"> </th>
+    <th class="wtp25">소분류</th>
+    <th class="hidden">MAIN_ID</th>
+    <th class="hidden">SUB1_ID</th>
+    <th class="hidden">SUB2_ID</th>
+    <th class="hidden">WINDOW_NAME</th>
+    <th class="hidden">IO_GUBUN</th>
+    <th class="hidden">PAGE_URL</th>
+    <th class="hidden">SUB2_NAME</th>
+</tr>|<tr class="click02">
+	<td class="chkbox02">listChk02</td>
+    <td class="center">TIT1</td>
+    <td class="hidden">SORT3</td>
+    <td class="center">TIT2</td>
+    <td class="hidden">SORT4</td>
+    <td class="center">TIT3</td>
+    <td class="hidden">MAIN_ID</td>
+    <td class="hidden">SUB1_ID</td>
+    <td class="hidden">SUB2_ID</td>
+    <td class="hidden">WINDOW_NAME</td>
+    <td class="hidden">IO_GUBUN</td>
+    <td class="hidden">PAGE_URL</td>
+    <td class="hidden">SUB2_NAME</td>
+</td>

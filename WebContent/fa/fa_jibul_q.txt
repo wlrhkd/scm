@@ -1,0 +1,17 @@
+<tr>
+    <th class="wt30">사업장</th>
+    <th class="wt30">거래처</th>
+    <th class="wt55">지불일자</th>
+    <th class="wt55">지불금액</th>
+    <th class="wt55">현금</th>
+    <th class="wt55">어음</th>
+    <th class="wt30">비고</th>
+</tr>|<tr>
+    <td class="center">SAUPJ</td>
+    <td class="center">CVNAS</td>
+    <td class="center">GYUL_DATE</td>
+    <td class="right">TOTAMT</td>
+    <td class="right">CASHAMT</td>
+    <td class="right">BILLAMT</td>
+    <td class="center">BIN</td>
+</td>

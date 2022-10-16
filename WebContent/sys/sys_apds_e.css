@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+[type="checkbox"] {
+	width: 20px;
+}
+#thChk {
+	padding: 0;
+}
+
+.radio-box {
+	float: left;
+	width: 90px;
+}
+
+.mt7 {
+	margin-top: 7px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml28 {
+	margin-left: 28px;
+}
+
+.wt88 {
+	width: 88px;
+}
+
+label {
+	cursor: text;
+}
+
+/************사용자 정의 CSS**************/
+#wrap .sheet-box .form-block {
+/* 	display : inline-block; */
+	padding-bottom : 0px;
+	float: left;
+}
+#wrap .sheet-box .row {
+	margin-bottom: 8px;
+    margin-left: 2.3%;
+}
+#wrap .sheet-box .left-row{
+	width : 55%;
+}
+
+#wrap .sheet-box .right-row{
+	width : 38%;
+	padding-left : 35px;
+	margin-left : 35px;
+	border-left : solid 1px #ccc;
+	height : 80% !important;
+}
+
+#wrap .sheet-box .table-row{
+	width : 34%;
+	height : 80% !important;
+	margin-left: 2%;
+    margin-right: 2%;
+}
+.container-fluid .table-type02-n{
+	min-width : 250px;
+}
+#wrap .sheet-box .paginate{
+    width : 50%;
+}
+.right-row .label{
+	margin : 0px;
+	padding : 0px;
+	width : 108.28px;
+	margin-right : 1px;
+	vertical-align : none;
+}
+.right-row .key::before{
+	left : -11px;
+}
+.right-row .sys-radio{
+	width : 30px;
+	height : 20px;
+}
+.wrap_bot {
+	display: flex;
+/* 	float: left; */
+}
+.right_wrap {	
+	height: 95%;
+	width: 40%;
+	display: inline-block;
+}
+.paging {
+	width: 37.5% !important;
+	float: left;
+	padding-bottom: 0;
+}
+.table2 {
+	height: 30% !important;
+/*     float: left; */
+    width: 54% !important;
+}
+.table2_btn {
+	margin-left: 75.5%;
+    width: 19%;
+}
+.write_date{
+	margin-left: 18.5%;
+}
+.wrap_m14 {
+	 width: 37%;
+}
+.memo_box{
+	resize: none;
+	width: 265%;
+    height: 97%;
+}
+td {
+	height: 39px;
+}
+.fchose {
+	margin-left: 88px;
+    height: 3.2rem;
+    width: 33%;
+    text-align: center;
+    padding: 0 !important;
+}
+.fdelete {
+	margin-left: -2px;
+    height: 3.2rem;
+    width: 33%;
+    text-align: center;
+    padding: 0 !important;
+}
+.file_img{
+	width : 25px;
+	height : 25px;
+	background : url(../img/icon/file.png) 50% 50% / 25px 25px no-repeat !important;
+	background-position : center;
+	cursor : pointer !important;
+}
+.chgFile{
+	padding : 0 2.4% !important;
+}
+#txt_file:hover{
+	text-decoration : underline;
+	color : #007aff;
+	cursor : pointer;
+}

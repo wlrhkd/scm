@@ -1,0 +1,76 @@
+.modal-layerf {
+	width: 400px;
+    height: 250px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #bcc4cf;
+    border-radius: 20px;
+    background-color: #f7fbfe;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.modal-layerf .modal-header {
+    position: relative;
+    height: 60px;
+    padding: 20px 26px;
+}
+
+.modal-layerf .modal-header .title {
+    float: left;
+    color: #333333;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 14px;
+    background-image: url(../../img/contents/icon_arrow_bot.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.modal-layerf .modal-header .btn-modal-close {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #606c80;
+    padding-right: 20px;
+    background-image: url(../../img/contents/icon_close01.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.modal-layerf .modal-content {
+    position: relative;
+    height: calc(100% - 60px);
+    background-color: #fff;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-top: 1px solid #bcc4cf;
+    -webkit-box-shadow: 1px -3px 6px 1px rgb(0 0 0 / 6%);
+    -moz-box-shadow: 1px -3px 6px 1px rgba(0,0,0,0.06);
+    box-shadow: 1px -3px 6px 1px rgb(0 0 0 / 6%);
+    padding: 20px 20px 20px 20px;
+}
+
+.modal-layerf .modal-content .search-wrap {
+    position: relative;
+    background-color: #f5f7f9;
+    border: 1px solid #d1dbe5;
+    border-radius: 4px;
+    padding: 20px;
+/*     margin-bottom: 10px; */
+    height: 57%;
+}
+.finput {
+	padding: 7px;
+    width: 98%;
+    margin-top: 5px;
+}
+.fvndmst {
+	padding: 0 !important;
+	width: 23%;
+}

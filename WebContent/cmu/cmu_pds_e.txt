@@ -1,0 +1,15 @@
+<tr>
+    <th class="wtp10">번호</th>
+    <th class="wtp40">제목</th>
+    <th class="wtp30">작성자</th>
+    <th class="wtp7">파일</th>
+    <th>작성일</th>
+    <th class="hidden">PNO</th>
+</tr>|<tr class="click">
+    <td class="center">ROWNUM1</td>
+    <td class="center">SUBJECT</td>
+    <td class="center">CHG_NAME</td>
+    <td class="center">CHG_FILE</td>
+    <td class="center">CRE_DT</td>
+    <td class="hidden">PNO</td>
+</td>

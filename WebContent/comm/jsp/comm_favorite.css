@@ -1,0 +1,71 @@
+.wt_head {
+	width: 297px;
+}
+.fav {
+	width: 101%;
+	border: none;
+    height: 80%;
+    background-color: #00ff0000;
+    margin-top: 10px;
+}
+.favimg {
+	cursor: pointer;
+/*     margin-left: 27%; */
+/*     margin-right: 3%; */
+    width: 8%;
+    text-align: right;
+	float: right;
+}
+.favtd {
+	text-align: left !important;
+	padding: 5% !important;
+    border: 1px solid #d1dbe5 !important;
+    border-radius: 10px;
+    background: linear-gradient(to top, #fafafa, 30%, #ffffff);
+    
+    box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 6%);
+    padding: 22px 20px;
+    margin-bottom: 14px;
+    transition: border .3s;
+    position: relative;
+    height: 60px;
+	
+	background-image: -ms-linear-gradient(top, #ffffff 70%, #fafafa 100%);
+	box-sizing: border-box;
+}
+.favtd:hover {
+	border-color: #00b2cf !important;
+}
+
+.favsp {
+	text-align: center;
+	cursor: pointer;
+	font-size: 15px;
+}
+.favsp:hover {
+	color: #00b2cf;
+    font-weight: 500;
+}
+.img_left {
+	width: 50px;
+	margin-left: 13px;
+	display: inline-block;
+}
+.table-scroll {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: auto;
+    overflow: auto;
+    height: 100%;
+}
+.table-scroll_fav table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+}
+.basic-scroll::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+}

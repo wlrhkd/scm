@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+[type="checkbox"] {
+	width: 20px;
+}
+#thChk {
+	padding: 0;
+}
+
+.radio-box {
+	float: left;
+	width: 90px;
+}
+
+.mt7 {
+	margin-top: 7px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml28 {
+	margin-left: 3.8%;
+}
+
+.wt88 {
+	width: 88px;
+}
+
+label {
+	cursor: text;
+}
+.wt170{
+	width:170px;		
+}
+.form-block .cal-input .bg-gray{
+	padding-left:17px;
+}
+.wrap {
+	display: flex;
+	margin-left: 3%;
+}
+.wrap_left {
+	width: 29%;
+	border-right: 3px solid #ccc;
+	margin-top: 10px;
+}
+.wrap_right {
+	width: 29%;
+	margin-left: 3%;
+/* 	border-right: 3px solid #ccc; */
+}
+.label_len {
+	width: 23%;
+	padding: 0;
+}
+
+.cmu_wt {
+	width: 63%;
+}
+.form-block_mar {
+	margin-left: 3%;
+	margin-bottom: 10px;
+}
+.password_wrap {
+	margin-left: 3%;
+}
+.box {
+	margin-left: 2.5%;
+}
+.li_margin {
+	margin-left: 70px;
+}
+.ul_margin {
+	margin-left: 40px;
+}
+.label {
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #333333;
+    padding-right: 10px;
+    margin-left: 3px;
+    vertical-align: middle;
+    font-weight: 500;
+    font-family: 'noto sans kr';
+}
+.li_margin2 {
+	margin-left: 70px;
+}
+.ul_margin2 {
+	margin-left: 40px;
+}
+.label2 {
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #333333;
+    padding-right: 10px;
+/*     margin-left: 3px; */
+	margin-top: 12px;
+    vertical-align: middle;
+    font-weight: 500;
+    font-family: 'noto sans kr';
+}
+.row {
+	margin-top: 13px;
+}
+.label_wrap {
+	margin-top: 26px;
+    margin-left: 17px;
+}
+.sheet-box .type02 {
+	width: 51%;
+	float: left;
+}
+.sheet-box .type03 {
+	width: 100%;
+	float: left;
+	height: 100%;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+.table-type02 {
+	min-width: 0px;
+}
+.table-type02 tbody td, .table-type02 tbody th, .table-type02 tfoot td {
+	padding: 5px 0px 5px;
+	line-height: 2.8em;
+}
+
+.sheet-wrap .sheet-box{
+	padding: 20px 16px;
+}
+
+.table-box-wrap {
+	height: 97%;
+}
+
+.right_area{
+	float:left;
+	padding: 0 10px 0 40px;
+	width : 48%;
+	height : 82%;
+}
+
+.right_area .right_input_box{
+	width : 100%;
+	border-bottom : solid 1px #CCC;
+	padding: 0 0 20px 0;
+	margin : 19px 0;
+}
+
+.table-type02 #tbl_head_02 th{
+	padding:0;
+	height:43px;
+}
+
+#wrap .content-wrap .contents {
+    position: static;
+    margin-top: 72px;
+    height: 100%;
+}

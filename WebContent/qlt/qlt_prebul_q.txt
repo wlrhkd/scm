@@ -1,0 +1,33 @@
+<tr>
+    <th class="wt100">품번</th>
+    <th class="wt100">품명</th>
+    <th class="wt90">규격</th>
+    <th class="wt90">재질</th>
+    <th class="wt90">일자</th>
+    <th class="wt130">불량내용</th>
+    <th class="wt70">수량</th>
+</tr>|<tr>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="center">CRT_DATE</td>
+    <td class="center">GUCOD</td>
+    <td class="center">GUQTY</td>
+</td>|<tr>
+    <th class="wt100">품번</th>
+    <th class="wt100">품명</th>
+    <th class="wt90">규격</th>
+    <th class="wt90">재질</th>
+    <th class="wt90">일자</th>
+    <th class="wt130">불량내용</th>
+    <th class="wt70">수량</th>
+</tr>|<tr>
+    <td class="left">ITNBR</td>
+    <td class="left">ITDSC</td>
+    <td class="left">ISPEC</td>
+    <td class="left">JIJIL</td>
+    <td class="center">CRT_DATE</td>
+    <td class="center">GUCOD</td>
+    <td class="center">GUQTY</td>
+</td>

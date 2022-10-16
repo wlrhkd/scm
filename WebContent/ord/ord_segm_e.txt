@@ -1,0 +1,47 @@
+<tr>
+    <th class="wt70">사업장</th>
+    <th class="wt70">마감년월</th>
+    <th class="hidden">마감순번</th>
+    <th class="hidden">거래처코드</th>
+    <th class="wt70">거래처</th>
+    <th class="wt50">납품금액</th>
+    <th class="wt50">공제금액</th>
+    <th class="wt50">공급가액</th>
+    <th class="wt70">VAT금액</th>
+    <th class="wt50">구분</th>
+</tr>|<tr class="listsel">
+	<td class="center">SAUPJ</td>
+    <td class="center">MAYYMM</td>
+    <td class="hidden">MAYYSQ</td>
+    <td class="hidden">CVCOD</td>
+    <td class="center">CVNAS</td>
+    <td class="right">IPAMT</td>
+    <td class="right">GONGAMT</td>
+    <td class="right">MAAMT</td>
+    <td class="right">MAVAT</td>
+    <td class="center">GUBUN</td>
+</td>|<tr>
+    <th class="wt70">검사일자</th>
+    <th class="wt120">품번</th>
+    <th class="wt180">품명</th>
+    <th class="wt150">수불구분</th>
+    <th class="wt50">수량</th>
+    <th class="wt50">단가</th>
+    <th class="wt50">납품금액</th>
+    <th class="wt50"">공제금액</th>
+    <th class="wt50">금액</th>
+    <th class="wt50">VAT금액</th>
+    <th class="wt150">입고전표번호</th>
+</tr>|<tr>
+    <td class="center">INSDAT</td>
+    <td class="center">ITNBR</td>
+    <td class="center">ITDSC</td>
+    <td class="center">IOGBN</td>
+    <td class="right">CNQTY</td>
+    <td class="right">IOPRC</td>
+    <td class="right">SAMT</td>
+    <td class="right">GAMT</td>
+    <td class="right">IOAMT</td>
+    <td class="right">VOAMT</td>
+    <td class="center">IOJPNO</td>
+</td>

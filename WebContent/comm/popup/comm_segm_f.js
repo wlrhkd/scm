@@ -1,0 +1,1 @@
+cfBtnHide("insert", "modify", "add", "help", "excel");

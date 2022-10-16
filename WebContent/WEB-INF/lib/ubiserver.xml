@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UbiServer version="4.0.0000.0000">
+	<Environment licensePath="{APP_ROOT}/ubi4/license"
+		admin="YWRtcEBzc3dkIQ=="
+		adminImgUri="./ubi4/js/images"
+		xslPath=""
+		osCharset="KSC5601" />
+	<LogInfo logPath="{APP_ROOT}/ubi4/logs"
+		timeZone="GMT+9"
+		rowSize="5"
+		backupStyle="date"
+		backupSize="30"
+		serverBackupSize="180"		
+		backupPattern="yyyy-MM-dd"
+		useLog="true"
+		useDebug="true"
+		info="true" />
+	<Resources>
+		<DataSource id="SAMPLE_DB1" type="auto" dataSourceName="jdbc/tutorial" charset="KSC5601" />
+		<DataSource id="erpman"
+			type="direct" 
+			vendor="Oracle"
+			driverClassName="oracle.jdbc.driver.OracleDriver"
+			url="jdbc:oracle:thin:@58.72.85.254:1521:hhpnt"
+			charset="KSC5601"
+			username="erpman"
+			password="erpman" />
+	</Resources>
+	<UbiServiceInfo urftype="normal" connectionTime="1800000" exectype="service">
+		<UbiService ip="localhost" port="16996" path=""/>
+	</UbiServiceInfo>
+	<!--
+	<UbiServiceInfo urftype="normal" connectionTime="1800000" exectype="was" myServiceid="Service1" >
+		<UbiService id="Service1" url="http://IP:PORT/myapp/UbiServer"/>
+		<UbiService id="Service2" url="http://IP:PORT/myapp/UbiServer"/>
+	</UbiServiceInfo>
+	-->
+</UbiServer>
